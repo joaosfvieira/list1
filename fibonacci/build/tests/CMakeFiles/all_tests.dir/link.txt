@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/all_tests.dir/main.cpp.o CMakeFiles/all_tests.dir/test_01.cpp.o -o all_tests  ../libfunc.a 

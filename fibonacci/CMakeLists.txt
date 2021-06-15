@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.18)
+cmake_minimum_required(VERSION 3.0)
 project (FibBelowN VERSION 1.0 LANGUAGES CXX )
 
 #== find package, v3 version
@@ -13,7 +13,18 @@ set_target_properties( ${LIB_NAME} PROPERTIES CXX_STANDARD 11 )
 
 # #=== Test target ===
 set ( TEST_NAME "all_tests")
-add_subdirectory(tests)
+
+### [2] Test engine
+# includes do test manager
+include_directories( tests/lib/test_manager/include src/)
+
+# Cria um executável com nome "run_tests", adiciona neste executável os arquivos do test manager e o seu main.cpp
+add_executable( ${TEST_NAME}
+                tests/lib/test_manager/src/test_manager.cpp
+                tests/main.cpp )
+
+target_link_libraries( ${TEST_NAME} ${LIB_NAME} )
+
 
 # #=== Testing ===
 # enable_testing()
@@ -27,7 +38,7 @@ add_subdirectory(tests)
 
 add_custom_target(
     run_tests
-    COMMAND ${TEST_NAME} 2> /dev/null 
+    COMMAND ${TEST_NAME}
     # COMMAND ${CMAKE_BINARY_DIR}/tests/tests
     DEPENDS ${LIB_NAME}
 )

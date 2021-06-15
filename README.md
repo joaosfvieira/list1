@@ -3,7 +3,7 @@
 
 #  Introdução
 
-Esse exercício tem por objetivos fazer você praticar sua habilidade de **interpretar especificações de problemas**, aliada a sua capacidade de **projetar** e **implementar algoritmos**..
+Esse exercício tem por objetivos fazer você praticar sua habilidade de **interpretar especificações de problemas**, aliada a sua capacidade de **projetar** e **implementar algoritmos**.
 
 Além disso, o desenvolvimento desse trabalho oferecer uma oportunidade prática para utilizar elementos básicos de programação em C++, como laços, condicionais simples e composto, tipos de dados básicos e heterogêneos, expressões lógicas, passagem de parâmetros, criação de funções, leitura de escrita de informações a partir da entrada e saída padrão, dentre outros.
 
@@ -19,7 +19,7 @@ As tarefas a serem implementadas correspondem a cada um dos diretórios neste re
 - [fibonacci](./fibonacci)
 - [minmax](./minmax)
 - [inverter](./inverter)
-- [filter](./filter)
+- ~~[filter](./filter)~~ (respostas no arquivo [filter_students.cpp](filter./src/filter_students.cpp))
 - [ponto_em_retangulo_1](./ponto_em_retangulo_1)
 - [ponto_em_retangulo_2](./ponto_em_retangulo_2)
 
@@ -44,20 +44,20 @@ Nesta categoria você deve assumir que os dados de entrada para cada programa s�
 
 ```c++
 int x;
-std::cin>> std::ws>>x; //equivalente à scanf(" %d",&x);
+std::cin>>std::ws>>x; //equivalente à scanf(" %d",&x);
 std::cout<<x<<'\n'; //equivalente à scanf("%d\n",x);
 ```
 
 Para os exercícios que solicitam a implementação de uma função, você precisa apenas editar o arquivo `src/function.cpp`. Lá você vai encontrar o corpo vazio da função que precisa ser desenvolvida. Neste caso, é importante que você não mude a assinatura da função específica, assim os testes automáticos funcionarão.
 
-No geral é importante que você siga à risca as instruções sobre a implementação dos exercícios, uma vez que as respostas são validadas de forma automática. De preferencia, não qualquer coisa nos testes automáticos, a memos que seja acordado com o professor.
+No geral é importante que você siga à risca as instruções sobre a implementação dos exercícios, uma vez que as respostas são validadas de forma automática. De preferencia, não modifique qualquer coisa nos testes automáticos, a memos que seja acordado com o professor.
 
 ## Dependências (precisam ser instalados no seu ambiente)
 
 Para você poder compilar e executar os testes preparados para o exercício é necessário os seguintes requisitos:
 + [GNU gcc](https://gcc.gnu.org/), [clang](https://clang.llvm.org/), ou outro: compilador C++.
 + [cmake](https://cmake.org/): para gerar os arquivos _Makefiles_, que gerenciam a compilação otimizada do projeto.
-+ [Python](https://www.python.org/): para executar o script de teste de comparação de saída gerada/esperada.
++ [Python 3.0](https://www.python.org/): para executar o script de teste de comparação de saída gerada/esperada. Teste no seu terminal se o comando `python3 --version` funciona!.
 
 ## Instruções Categoria Implementação de Programa
 
@@ -78,10 +78,12 @@ A partir da pasta que contém as subpastas de cada questão faça:
 2. Entre na pasta do projeto, no caso `intervalos`:
 ```
 cd intervalos
+mkdir build
+cd build
 ```
 3. Execute o comando do `cmake` para gerar os arquivos intermediários. Esse comando cria a pasta `build` que conterá os arquivos _Makefile_ e onde o executável será gerado.
 ```
-cmake -S . -B build
+cmake ../
 ```
 Possível saída:
 
@@ -90,7 +92,7 @@ Possível saída:
 
 4. Execute o comando do `cmake` para **compilar** o projeto `intervalos` dentro da pasta `build`. Esse comando criará um executável dentro de `build` chamado (de forma genérica) de `program`.
 ```
-cmake --build build
+cmake --build .
 ```
 Possível saída:
 
@@ -100,13 +102,11 @@ Possível saída:
 
 5. Se houver erro de compilação, corrija e volte ao passo anterior. Se a compilação for bem sucedida, prossiga com o comando abaixo para entrar na pasta `build` e rodar os testes.
 ```
-cd build
-make verify
+cmake --build . --target verify
 ```
 6. Observe os resultados dos testes do passo anterior. Se algum teste falhar você deve corrigir o problema e compilar o projeto novamente, como descrito no passo 4. Se você estiver na pasta `build` e desejar compilar novamente, pode executar os comandos abaixo, ao invés de retornar ao passo 4 (que deve ser executado de fora do `build`)
 ```
-make
-make verify
+cmake --build . --target verify
 ```
 Se os testes forem bem sucedidos, você deve encontrar uma saída como essa abaixo:
 
@@ -130,31 +130,33 @@ Vamos considerar que desejamos compilar e testar o projeto `Fibonacci`, que requ
 2. Entre na pasta do projeto, no caso `fibonacci`:
 ```
 cd fibonacci
+mkdir build
+cd build
 ```
 3. Execute o comando do `cmake` para gerar os arquivos intermediários. Esse comando cria a pasta `build` que conterá os arquivos _Makefile_ e onde o executável será gerado.
 ```
-cmake -S . -B build
+cmake ../
 ```
 4. Execute o comando do `cmake` para **compilar** o projeto `fibonacci` dentro da pasta `build`. Esse comando criará dentro da pasta `build` uma biblioteca estática contendo a sua função, `libfunc.a`, e um executável para executar os testes unitários, `tests/all_tests`.
 ```
-cmake --build build
+cmake --build .
 ```
 Possível saída:
 
 <!-- <img src="./pics/cmake_build_fib.png" width="550"> -->
-![cmake build Fibonacci](./pics/cmake_build_fib.png)
+![cmake build](./pics/cmake_build_int.png)
 
-5. Se houver erro de compilação, corrija e volte ao passo anterior. Se a compilação for bem sucedida, prossiga com o comando abaixo para entrar na pasta `build` e executar os testes.
+5. Se houver erro de compilação, corrija e volte ao passo anterior. Se a compilação for bem sucedida, prossiga com o comando abaixo para entrar na pasta `build` e executar o comando:
+
 ```
-cd build
-make run_all_tests
+cmake --build . --target run_tests
 ```
 
-6. Observe os resultados dos testes do passo anterior. Se algum teste falhar você deve corrigir o problema e compilar o projeto novamente, como descrito no passo 4. Se você estiver na pasta `build` e desejar compilar novamente, pode executar os comandos abaixo, ao invés de retornar ao passo 4 (que deve ser executado de fora do `build`)
+6. Observe os resultados dos testes do passo anterior. Se algum teste falhar você deve corrigir o problema e compilar o projeto novamente, como descrito no passo 4. Se você estiver na pasta `build` e desejar compilar novamente, pode executar os comandos abaixo, ao invés de retornar ao passo 4 (que deve ser executado de fora do `build`) no linux:
 ```
-make
-make run_all_tests
+cmake --build . --target run_tests
 ```
+
 Se os testes forem bem sucedidos, você deve encontrar uma saída como essa abaixo:
 
 <!-- <img src="./pics/unit_test.png" width="550"> -->

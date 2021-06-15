@@ -6,6 +6,8 @@ using std::array;
 #include <string>
 using std::string;
 
-template <size_t SIZE>
+template <std::size_t SIZE>
 void reverse( std::array<std::string,SIZE> & arr );
+
+#include "function.cpp"
 #endif

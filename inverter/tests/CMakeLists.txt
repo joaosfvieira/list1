@@ -14,4 +14,5 @@ add_executable( ${TEST_NAME} main.cpp )
 #... and any other test source that have been created.
 target_sources( ${TEST_NAME} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/test_01.cpp" )
 # We link the library we want to test and the Catch2 library.
-target_link_libraries( ${TEST_NAME} PRIVATE ${LIB_NAME} PRIVATE Catch2 )
+#target_link_libraries( ${TEST_NAME} PRIVATE ${LIB_NAME} PRIVATE Catch2 )
+target_link_libraries( ${TEST_NAME} PRIVATE Catch2 )

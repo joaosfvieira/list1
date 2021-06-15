@@ -2,7 +2,7 @@
 
 Preencha os dados abaixo para identificar a autoria do trabalho.
 
-- Nome: *\<insira seu nome aqui>*
+- Nome: *\<__insira seu nome aqui__>*
 - Email: *\<insira seu email aqui>*
 - Turma: *\<insira sua turma aqui>*
 
@@ -20,4 +20,4 @@ Preencha os dados abaixo para identificar a autoria do trabalho.
 
 
 --------
-&copy; DIMAp/UFRN 2021.
+&copy; DIMAp/IMD/UFRN 2021.
