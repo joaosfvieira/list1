@@ -2,9 +2,9 @@
 
 Preencha os dados abaixo para identificar a autoria do trabalho.
 
-- Nome: João de Souza Fernandes Vieira
-- Email: joao.vieira.083@ufrn.edu.br
-- Turma: T02 (2021.1)
+- Nome: 
+- Email: 
+- Turma: 
 
 # Questões Finalizadas
 
