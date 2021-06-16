@@ -2,9 +2,9 @@
 
 Preencha os dados abaixo para identificar a autoria do trabalho.
 
-- Nome: *\<__insira seu nome aqui__>*
-- Email: *\<insira seu email aqui>*
-- Turma: *\<insira sua turma aqui>*
+- Nome: João de Souza Fernandes Vieira
+- Email: joao.vieira.083@ufrn.edu.br
+- Turma: T02 (2021.1)
 
 # Questões Finalizadas
 
