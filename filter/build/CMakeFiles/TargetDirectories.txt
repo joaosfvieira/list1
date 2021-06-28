@@ -1,0 +1,8 @@
+/home/runner/list1/filter/build/CMakeFiles/rebuild_cache.dir
+/home/runner/list1/filter/build/CMakeFiles/func.dir
+/home/runner/list1/filter/build/CMakeFiles/edit_cache.dir
+/home/runner/list1/filter/build/CMakeFiles/run_tests.dir
+/home/runner/list1/filter/build/tests/CMakeFiles/rebuild_cache.dir
+/home/runner/list1/filter/build/tests/CMakeFiles/edit_cache.dir
+/home/runner/list1/filter/build/tests/CMakeFiles/TM.dir
+/home/runner/list1/filter/build/tests/CMakeFiles/all_tests.dir

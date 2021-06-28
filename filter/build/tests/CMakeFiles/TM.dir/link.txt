@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTM.a  CMakeFiles/TM.dir/include/tm/test_manager.cpp.o
+/usr/bin/ranlib libTM.a

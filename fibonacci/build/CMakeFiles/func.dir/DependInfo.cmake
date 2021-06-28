@@ -1,14 +1,17 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
   )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/runner/list1/fibonacci/src/function.cpp" "/home/runner/list1/fibonacci/build/CMakeFiles/func.dir/src/function.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lp1/fibonacci/src/function.cpp" "CMakeFiles/func.dir/src/function.cpp.o" "gcc" "CMakeFiles/func.dir/src/function.cpp.o.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../tests/lib/test_manager/include"
+  "../src"
   )
 
 # Targets to which this target links.

@@ -3,6 +3,7 @@
 
 #include <utility>
 using std::pair;
+using std::size_t;
 
 std::pair<int, int> min_max( int V[], std::size_t n );
 

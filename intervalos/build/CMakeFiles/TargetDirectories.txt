@@ -1,0 +1,4 @@
+/home/runner/list1/intervalos/build/CMakeFiles/rebuild_cache.dir
+/home/runner/list1/intervalos/build/CMakeFiles/program.dir
+/home/runner/list1/intervalos/build/CMakeFiles/edit_cache.dir
+/home/runner/list1/intervalos/build/CMakeFiles/verify.dir

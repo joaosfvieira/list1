@@ -1,0 +1,4 @@
+/home/runner/list1/soma_vizinhos/build/CMakeFiles/rebuild_cache.dir
+/home/runner/list1/soma_vizinhos/build/CMakeFiles/program.dir
+/home/runner/list1/soma_vizinhos/build/CMakeFiles/edit_cache.dir
+/home/runner/list1/soma_vizinhos/build/CMakeFiles/verify.dir

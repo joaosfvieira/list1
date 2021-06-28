@@ -12,10 +12,30 @@
  * @param last Pointer just past the last valid value of the range we want to filter.
  * @return a pointer to the new 'logical' end of the array.
  */
-int * filter( int * first, int * last )
+int * filter( int * first_, int *last_ )
 {
-    // TODO: coloque aqui o seu código-solução.
-    
-    // TODO: substitua o retorno de acordo com a solução. Isso é somente um STUB temporário.
-    return nullptr;
+    // Percorrer o intervalo do início ao fim, analisando cada elemento
+    while( first_ != last_ )
+    {
+        // Avaliar se o elemento deve ser filtrado ou não
+        if ( *first_ <= 0 ) // rejeitado
+        {
+            // Deslocar todos os elementos a partir do first, 1 posição para esquerda.
+            auto i( first_ );
+            while( i != last_-1 )
+            {
+                *i = *(i+1);
+                ++i;
+            }
+            // Potencial 'bug'!!! Não esquecer de atualizar o last_.
+            last_--;
+        }
+        else
+        {
+            // Avançar e aceitar o elemento.
+            first_++;
+        }
+    }
+
+    return first_; //
 }

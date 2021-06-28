@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/runner/list1/ponto_em_retangulo_1/src/function.cpp
+function.h
+/home/runner/list1/ponto_em_retangulo_1/src/function.h
+
+/home/runner/list1/ponto_em_retangulo_1/src/function.h
+array
+-
+string
+-
+

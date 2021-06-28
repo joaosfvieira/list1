@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/runner/list1/filter/src/function.h
+
+/home/runner/list1/filter/tests/include/tm/test_manager.h
+iostream
+-
+iomanip
+-
+algorithm
+-
+string
+-
+unordered_map
+-
+vector
+-
+
+/home/runner/list1/filter/tests/main.cpp
+iostream
+-
+cassert
+-
+random
+-
+iterator
+-
+algorithm
+-
+include/tm/test_manager.h
+/home/runner/list1/filter/tests/include/tm/test_manager.h
+../src/function.h
+/home/runner/list1/filter/src/function.h
+

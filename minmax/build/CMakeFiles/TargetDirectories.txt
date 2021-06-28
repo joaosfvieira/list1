@@ -1,0 +1,5 @@
+/home/runner/list1/minmax/build/CMakeFiles/edit_cache.dir
+/home/runner/list1/minmax/build/CMakeFiles/run_tests.dir
+/home/runner/list1/minmax/build/CMakeFiles/rebuild_cache.dir
+/home/runner/list1/minmax/build/CMakeFiles/func.dir
+/home/runner/list1/minmax/build/CMakeFiles/all_tests.dir

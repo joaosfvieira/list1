@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/all_tests.dir/main.cpp.o  -o all_tests ../libfunc.a libTM.a 
